@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --usually-white: white;
+    --usually-black: black;
+    --bg-color: #141922;
+    --dark-grey: #282828;
+    --normal-grey: #686868;
+    --light-grey: #B6B6B6;
+    --few-elements-gray: #5D5D5D;
+
+    /*  first-font: "sans-serif";
+        second-font: "Helvetica-Neue";
+        third-font: "Helvetica";
+        fourth-font: "Arial";  */
+}
+
+.container{}
+
+.row{}
+
+.col{}

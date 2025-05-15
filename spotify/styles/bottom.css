@@ -1,0 +1,7 @@
+.bottom-container{
+    display: flex;
+    align-items: baseline;
+    width: 100vw;
+    height: 80px;
+    background-color: var(--dark-grey);
+}
