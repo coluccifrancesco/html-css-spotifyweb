@@ -13,8 +13,8 @@
 
     <body>
 
-        <div> <!-- header position relative, z-index più alto da mettere nella sidebar left -->
-
+        <div class="header"> <!-- header position fixed, z-index più alto da mettere nella sidebar left -->
+            <button>effettua l'upgrade</button>
         </div>
         
         <div> <!-- wrapper -->
@@ -22,7 +22,74 @@
                 <div class="top">
                     
                     <div class="left-sidebar-container"> <!-- sidebar left -->
-                        
+                        <nav class="container-nav">
+                            <img class="logo" src="./img/logo.svg" alt="Logo Spotify">
+
+                            <ul> <!-- lista home ecc -->
+                                <div class="lista-container">
+                                    <div class="li-cont">
+                                        <li><img src="./img/home.svg" class="icona" alt="icona home"></li>
+                                        <li><p class="hcl">Home</p></li>
+                                    </div>
+                                    
+                                    <div class="li-cont">
+                                        <li><img src="./img/search.svg" class="icona" alt="icona home"></li>
+                                        <li><p class="hcl">Cerca</p></li>
+                                    </div>
+                                    
+                                    <div class="li-cont">
+                                        <li><img src="./img/libreria.svg" class="icona" alt="icona home"></li>
+                                        <li><p class="hcl">La tua libreria</p></li>
+                                    </div>
+                                </div>
+                            </ul>
+
+                            <ul> <!-- palylist list -->
+                                <div class="lista-container">
+                                    <div class="li-cont">
+                                        <li><h2>playlist</h2></li>
+                                    </div>
+
+                                    <div class="li-cont crea-cont">
+                                        <div>
+                                            <li><p class="più">+</p></li>
+                                        </div>
+
+                                        <div>
+                                            <li><p class="crea">Crea Playlist</p></li>
+                                        </div>
+                                    </div>
+
+                                    <div class="li-cont">
+                                        <li><p>Nuova Playlist</p></li>
+                                    </div>
+                                    <div class="li-cont">
+                                        <li><p>Nuova Playlist</p></li>
+                                    </div>
+                                    <div class="li-cont">
+                                        <li><p>Nuova Playlist</p></li>
+                                    </div>   
+                                    <div class="li-cont">
+                                        <li><p>Nuova Playlist</p></li>
+                                    </div>
+                                    <div class="li-cont">
+                                        <li><p>Nuova Playlist</p></li>
+                                    </div>
+                                    <div class="li-cont">
+                                        <li><p>Nuova Playlist</p></li>
+                                    </div>
+                                    <div class="li-cont">
+                                        <li><p>Nuova Playlist</p></li>
+                                    </div>   
+                                    <div class="li-cont">
+                                        <li><p>Nuova Playlist</p></li>
+                                    </div>
+
+                                </div>
+                            </ul>
+
+
+                        </nav>
                     </div>
     
                     <div class="right-sidebar-container"> <!-- sidebar right -->

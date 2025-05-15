@@ -1,6 +1,149 @@
 .top{
-    height: calc(100vh - 80px);
+    height: calc(100vh - 90px);
     width: 100vw;
     display: flex;
 }
 
+/* #region header */
+.header{
+    width: 100vw;
+    height: 90px;
+    position: fixed;
+    background-color: var(--header-color);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    button{
+        margin-right: 2rem;
+        text-transform: uppercase;
+        background-color: var(--header-color);
+        color: var(--usually-white);
+        border: 1px solid var(--usually-white);
+        border-radius: 25px;
+        padding: 13px 60px;
+        font-size: 1.1rem;
+
+        &:hover{
+            cursor: pointer;
+            color: var(--bg-color);
+            background-color: var(--usually-white);
+        }
+    }
+}
+/* #endregion header */
+
+.left-sidebar-container{
+    min-width: 350px;
+    height: 100%;
+    background-color: var(--usually-black);
+    z-index: 2;
+}
+
+.container-nav{
+    width: 100%;
+    height: 100%;;
+}
+
+.logo{
+    height: 50px;
+    margin: 18px 30px;
+}
+
+.lista-container{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    list-style: none;
+
+    .li-cont{
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+        height: 38px;
+
+        img{
+            margin-right: 10px;
+        }
+
+        p{
+            font-size: 1.1rem;
+        }
+
+        .hcl{
+            font-size: 1.3rem;
+        }
+
+        h2{
+            text-transform: uppercase;
+            color: var(--usually-white);
+            font-size: 1.3rem;
+        }
+
+        .più{
+            font-size:3rem;
+            margin: 0;
+            padding: 0;
+            width: 50px;
+            height: 50px;
+            padding-left: 10px;
+            background-color: var(--normal-grey);
+            color: var(--usually-black);
+            margin: 20px 20px 20px 0;
+        }
+    }
+
+    .li-cont:has(li:hover){
+        background-color: rgb(8, 8, 8);
+        border-left:3px solid var(--hover-color);
+
+        li{
+            margin-left: -3px;
+            margin-right: 3px;
+            cursor: pointer;
+
+            p{
+                color: var(--usually-white);
+            }
+
+            .più{
+                background-color: var(--usually-white);
+                color: var(--usually-black);
+            }
+        }
+    }
+
+    .li-cont:has(h2:hover){
+        background-color: var(--usually-black);
+        border: none;
+        color: var(--usually-white);
+
+        li{
+            margin: 0;
+            cursor: initial;
+        }
+    }
+
+    .li-cont:has(h2){
+        margin-top: 20px;
+    }
+
+    .li-cont[p="Nuova PLaylist"]{
+        height: 30px;
+    }
+
+    .crea-cont{
+        height: 70px;
+    }
+}
+
+.icona{
+    width: 30px;
+}
+
+
+.right-sidebar-container{
+    width: 84vw;
+    height: 100%;
+    background-color: var(--bg-color);
+}
