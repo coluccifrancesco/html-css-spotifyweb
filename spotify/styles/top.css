@@ -46,6 +46,94 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.div-in-nav{
+    background-color: rgb(71, 71, 71);
+    width: 100%;
+    padding: 0 1.1rem;
+
+    ul{
+        list-style: none;
+    }
+}
+
+.logo{
+    height: 36px;
+    margin: 17px auto;
+}
+
+.ul-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ul-nav-1{
+    img{
+        height: 21px;
+        margin-right: 5px;
+    }
+}
+
+.li-cont{
+    display: flex;
+    align-items: center;
+    height: 30px;
+
+    p{
+        font-size: 0.8rem;
+    }
+}
+
+.li-cont-2{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 12px 0;
+
+    h2{
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        color: var(--usually-white);
+    }
+
+    div{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.li-cont-3{
+    p{
+        margin: 8px 0;
+        font-size: 0.75rem;
+    }
+}
+
+.più{
+    font-size: 1.7rem;
+    color: var(--usually-black);
+    background-color: var(--normal-grey);
+    padding: 0 8px;
+    margin-right: 10px;
+}
+
+.crea{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.ul-nav-2{
+    div{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.installa-icon{
+    height:20px;
+}
 /* #endregion left */
 
 
