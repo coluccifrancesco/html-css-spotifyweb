@@ -37,10 +37,11 @@
 
 /* #region left */
 .left-sidebar-container{
-    min-width: 350px;
+    width: 260px;
     height: 100%;
     background-color: var(--usually-black);
     z-index: 2;
+    overflow: hidden;
 }
 
 .container-nav{
@@ -61,6 +62,7 @@
     justify-content: flex-end;
     flex-direction: column;
     list-style: none;
+    padding: 0 30px;
 
     .li-cont{
         display: flex;
@@ -153,7 +155,7 @@
 }
 
 .icona{
-    width: 30px;
+    width: 25px;
 }
 
 
@@ -177,14 +179,14 @@
 
     hr{
         color: var(--normal-grey);
-        width: 280px;
+        width: 190px;
         margin-top: 15px;
     }
 
     h2{
         font-weight: bold;
         color: var(--usually-white);
-        font-size: 1.3rem;
+        font-size: 1rem;
         cursor: pointer;
     }
 }
@@ -231,7 +233,6 @@
     }
 }
 /* #endregion left */
-
 
 
 

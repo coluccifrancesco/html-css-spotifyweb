@@ -19,15 +19,22 @@
 
     --hover-color: #AEFF2F; 
 
-    /*  first-font: "sans-serif";
+    /*  
+        first-font: "sans-serif";
         second-font: "Helvetica-Neue";
         third-font: "Helvetica";
-        fourth-font: "Arial";  */
+        fourth-font: "Arial";  
+    */
 }
 
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 70px;
+    min-height: 350px;
+}
+
+body{
+    min-height: 350px;
 }
 
 .container {
