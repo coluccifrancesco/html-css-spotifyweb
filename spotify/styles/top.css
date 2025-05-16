@@ -95,7 +95,7 @@
             padding-left: 10px;
             background-color: var(--normal-grey);
             color: var(--usually-black);
-            margin: 20px 20px 20px 0;
+            margin: 20px 15px 20px 0;
         }
     }
 
@@ -140,6 +140,11 @@
 
     .crea-cont{
         height: 70px;
+
+        .crea{
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
     }
 }
 
