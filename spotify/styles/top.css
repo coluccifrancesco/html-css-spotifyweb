@@ -1,5 +1,5 @@
 .top{
-    height: calc(100vh - 90px);
+    height: calc(100vh - 80px);
     width: 100vw;
     display: flex;
 }
@@ -38,7 +38,7 @@
 .nav-left{
     background-color: rgb(0, 0, 0);
     width: 200px;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 80px);
     z-index: 2;
     overflow: hidden;
     display: flex;
@@ -48,7 +48,6 @@
 }
 
 .div-in-nav{
-    background-color: rgb(71, 71, 71);
     width: 100%;
     padding: 0 1.1rem;
 
@@ -129,10 +128,39 @@
         display: flex;
         align-items: center;
     }
+
+    hr{
+        width: 160px;
+        height: 1px;
+        margin: 10px auto;
+    }
+
+    &:last-of-type{
+        margin-bottom: 6px;
+    }
+
+    h2{
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: var(--usually-white);
+    }
 }
 
 .installa-icon{
-    height:20px;
+    height:15px;
+    margin-right: 10px;
+}
+
+.installa{
+    font-size: 0.8rem;
+}
+
+.propic{
+    height: 20px;
+    width: 20px;
+    background-color: var(--normal-grey);
+    border-radius: 50%;
+    margin-right: 10px;
 }
 /* #endregion left */
 
