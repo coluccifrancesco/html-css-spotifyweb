@@ -55,7 +55,8 @@
     margin: 18px 30px;
 }
 
-.lista-container{
+    /* divisore dentro <ul> */
+.lista-container{ 
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -76,7 +77,7 @@
         }
 
         .hcl{
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
 
         h2{
@@ -142,20 +143,87 @@
     }
 }
 
+.cerca-icon{
+    margin-top: 5px;
+}
+
 .icona{
     width: 30px;
 }
 
-.lista-container-bottom{
-    margin-top: auto;
+
+/* div space between tra liste */
+.div-space-bet{
     height: 100%;
-    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* lista bottom */ 
+.lista-container-bottom{
     list-style: none;
 }
 
 .li-cont-bottom{
     display: flex;
+    align-items: center;
     padding: 0 30px;
+
+    hr{
+        color: var(--normal-grey);
+        width: 280px;
+        margin-top: 15px;
+    }
+
+    h2{
+        font-weight: bold;
+        color: var(--usually-white);
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+}
+
+.installa-cont{
+    img,
+    p{
+        cursor: pointer;
+    }
+}
+
+.download-icon{
+    height: 25px;
+    margin-bottom: -10px;
+}
+
+.installa{
+    font-size: 1.1rem;
+    margin-bottom: -2px;
+}
+
+.propic{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: var(--normal-grey);
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.installa-cont:has(img:hover),
+.installa-cont:has(p:hover),
+.profile:has(img:hover),
+.profile:has(h2:hover){
+    border-left: 3px solid var(--hover-color);
+
+    li{
+        margin-left: -3px;
+        margin-right: 3px;
+    }
+
+    .propic{
+        background-color: var(--usually-black);
+    }
 }
 /* #endregion left */
 
@@ -164,7 +232,7 @@
 
 /* #region right */
 .right-sidebar-container{
-    width: 84vw;
+    flex-grow: 1;
     height: 100%;
     background-color: var(--bg-color);
 }
