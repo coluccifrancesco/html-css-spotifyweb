@@ -7,7 +7,7 @@
 /* #region header */
 .header{
     width: 100vw;
-    height: 70px;
+    height: 60px;
     position: fixed;
     background-color: var(--header-color);
     display: flex;
@@ -15,14 +15,14 @@
     align-items: center;
 
     button{
-        margin-right: 2rem;
+        margin-right: 0.5rem;
         text-transform: uppercase;
         background-color: var(--header-color);
         color: var(--usually-white);
         border: 1px solid var(--usually-white);
         border-radius: 25px;
         padding: 10px 30px;
-        font-size: 0.6rem;
+        font-size: 0.5rem;
 
         &:hover{
             cursor: pointer;
@@ -37,7 +37,7 @@
 /* #region left */
 .nav-left{
     background-color: rgb(0, 0, 0);
-    width: 200px;
+    min-width: 200px;
     height: calc(100vh - 80px);
     z-index: 2;
     overflow: hidden;
@@ -58,7 +58,7 @@
 
 .logo{
     height: 36px;
-    margin: 17px auto;
+    margin: 12px auto;
 }
 
 .ul-nav{
@@ -170,5 +170,60 @@
     flex-grow: 1;
     height: 100%;
     background-color: var(--bg-color);
+
+    h2{
+        font-weight: bold;
+        color: var(--usually-white);
+        font-size: 1.3rem;
+    }
+}
+
+.nav-top{
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0px auto;
+        height: 60px;
+
+        div{
+
+            &:has(p:hover){
+                border-bottom: 1px solid var(--hover-color);
+            }
+
+            p{
+                font-size: 0.55rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding-bottom: 3px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: -1rem 0;
+
+    img{
+        width: 100%;
+    }
+
+    h2{
+        font-size: 1.2rem;
+        margin: 5px 0;
+    }
+
+    p{
+        font-size: 0.8rem;
+    }
 }
 /* #endregion right */
