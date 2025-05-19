@@ -266,7 +266,7 @@
         list-style: none;
         gap: 2rem;
 
-        div{
+        .col{
             border-bottom: 1px solid transparent;
 
             &:has(p:hover){

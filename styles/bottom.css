@@ -37,6 +37,12 @@
 
     p{
         font-size: 0.5rem;
+
+        &:hover{
+            text-decoration: underline;
+            color: var(--usually-white);
+            cursor: pointer;
+        }
     }
 }
 
@@ -50,6 +56,11 @@
 
     i{
         font-size: 0.8rem;
+
+        &:hover{
+            color: var(--usually-white);
+            cursor: pointer;
+        }
     }
 }
 /* #endregion left */
