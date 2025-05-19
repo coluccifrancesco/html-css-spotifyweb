@@ -169,6 +169,7 @@
     flex-grow: 1;
     min-width: 250px;
     background-color: var(--bg-color);
+    overflow-y: auto;
 
     h2{
         font-weight: bold;
