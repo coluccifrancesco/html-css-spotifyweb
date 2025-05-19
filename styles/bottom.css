@@ -94,6 +94,8 @@
 
     p{
         font-size: 0.6rem;
+        color: var(--usually-white);
+        font-weight: bold;
     }
 }
 
@@ -103,23 +105,35 @@
     align-items: center;
     width: 80%;
     margin: 10px auto;
-
     position: relative;
+
+    div{
+        margin-top: 3px;
+    }
 
     .song-timing{
         background-color: var(--normal-grey);
         width: 100%;
-        height: 2px;
+        height: 3px;
         border-radius: 10px;
     }
-    
+
     .actual-time{
         position: absolute;
         width: 15%;
         left: 0;
-        height: 2px;
+        height: 3px;
         background-color: var(--usually-white);
         z-index: 10;
+
+        &:hover{
+            background-color: var(--hover-color);
+            cursor: pointer;
+
+            & .point{
+                display: block;
+            }
+        }
     }
 
     .point{
@@ -129,6 +143,7 @@
         border-radius: 50%;
         background-color: var(--usually-white);
         left: 14%;
+        z-index: 3000;
         display: none;
     }
 }
