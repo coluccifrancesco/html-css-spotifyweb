@@ -346,5 +346,10 @@
         font-size: 0.6rem;
         margin-bottom: 10px;
     }
+
+    .circle{
+        border-radius: 50%;
+        overflow: hidden;
+    }
 }
 /* #endregion right */
