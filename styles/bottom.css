@@ -1,4 +1,5 @@
 .bottom-container{
+    min-width: 420px;
     width: 100%;
     height: 70px;
     background-color: var(--dark-grey);
@@ -9,7 +10,7 @@
 
 .left-bot-sect{
     background-color: antiquewhite;
-    min-width: 12.8%;
+    min-width: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,19 +25,18 @@
 }
 
 .player-img{
-    max-width: 40px;
-    margin-right: 10px;
+    height: 30px;
 }
 
 .song-details{
+    margin-left: 10px;
 
     h3{
-        font-size: 0.8rem;
-        margin-bottom: -2px;
+        font-size: 0.7rem;
     }
 
     p{
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 }
 
@@ -44,9 +44,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 18%;
+    min-width: 22%;
     background-color: aquamarine;
-    margin-left: 20px;
+    margin-left: 9px;
 
     i{
         font-size: 0.8rem;
@@ -62,4 +62,33 @@
 .right-bot-sect{
     width: 20%;
     background-color: azure;
+}
+
+@media screen and (max-width:605px) {
+
+    .player-img{
+        height: 20px
+    }
+
+    .song-details{
+        margin-left: 5px;
+
+        h3{
+            font-size: 0.6rem;
+        }
+
+        p{
+            font-size: 0.4rem;
+        }
+    }
+    
+    .spaced-right{
+        flex-direction: column;
+        margin-left: 0;
+        gap: 0.4rem;
+
+        i{
+            font-size: 0.6rem;
+        }
+    }
 }

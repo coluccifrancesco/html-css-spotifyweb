@@ -235,7 +235,7 @@
 /* #region right */
 .right-sidebar-container{
     flex-grow: 1;
-    min-width: 255px;
+    min-width: 380px;
     background-color: var(--bg-color);
     overflow-y: auto;
 
