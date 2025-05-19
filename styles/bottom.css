@@ -10,7 +10,7 @@
 
 /* #region left */
 .left-bot-sect{
-    width: 24%;
+    min-width: 24%;
     display: flex;
     align-items: center;
     margin: auto 1rem;
@@ -45,7 +45,7 @@
     justify-content: center;
     align-items: center;
     min-width: 22%;
-    gap: 0.2rem;
+    gap: 0.4rem;
     margin-left: 10px;
 
     i{
@@ -58,7 +58,7 @@
 /* #region middle */
 .mid-bot-sect{
     height: 70%;
-    width: 45%;
+    min-width: 45%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -107,42 +107,37 @@
     margin: 10px auto;
     position: relative;
 
-    div{
-        margin-top: 3px;
-    }
-
     .song-timing{
         background-color: var(--normal-grey);
         width: 100%;
         height: 3px;
         border-radius: 10px;
-    }
+        cursor: pointer;
 
-    .actual-time{
-        position: absolute;
-        width: 15%;
-        left: 0;
-        height: 3px;
-        background-color: var(--usually-white);
-        z-index: 10;
-
-        &:hover{
+        &:hover  .actual-time{
             background-color: var(--hover-color);
-            cursor: pointer;
+        }
 
-            & .point{
-                display: block;
-            }
+        &:hover .dot{
+            display: block;
         }
     }
 
-    .point{
+    .actual-time{
+        width: 15%;
+        height: 3px;
+        background-color: var(--usually-white);
+    }
+
+
+    .dot{
         position: absolute;
         height: 10px;
         width: 10px;
         border-radius: 50%;
         background-color: var(--usually-white);
         left: 14%;
+        margin-top: -6px;
         z-index: 3000;
         display: none;
     }
@@ -152,10 +147,54 @@
 
 /* #region right */
 .right-bot-sect{
-    width: 24%;
-    margin: 1rem;  
-    background-color: azure;
+    min-width: 24%;
+    margin: auto 1rem;  
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    i{
+        color: var(--usually-white);
+        font-size: 0.8rem;
+    }
 }
+
+.volume{
+    min-width: 30%;
+    height: 3px;
+    background-color: var(--normal-grey);
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover .dot-volume{
+        display: block;
+    }
+
+    &:hover .actual-volume{
+        background-color: var(--hover-color);
+    }
+
+    .actual-volume{
+        width: 45%;
+        height: 3px;
+        background-color: var(--usually-white);
+    }
+
+    .dot-volume{
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: var(--usually-white);
+        position: absolute;
+        margin-top: -6px;
+        right: 6%;
+        display: none;
+    }
+}
+
+
 /* #endregion right */
 
 @media screen and (max-width:705px){
@@ -169,6 +208,10 @@
         i{
             font-size: 0.8rem;
         }
+    }
+    
+    .right-bot-sect{
+        gap: 0.5rem;
     }
 }
 
@@ -194,32 +237,40 @@
     
     .spaced-right{
         flex-direction: column;
-        margin-left: 0;
+        margin-left: 9%;
         gap: 0.4rem;
+        width: 15%;
+
 
         i{
             font-size: 0.6rem;
         }
     }
-/* #endregion left */
+    /* #endregion left */
 
 
-/* #region middle */
-.upper-bot{
-    gap: 1rem;
+    /* #region middle */
+    .upper-bot{
+        gap: 1rem;
 
-    i{
-        font-size: 0.7rem;
+        i{
+            font-size: 0.7rem;
+        }
     }
-}
 
-.timing{
-    width: 70%;
-}
-/* #endregion middle */
+    .timing{
+        width: 70%;
+    }
+    /* #endregion middle */
 
 
-/* #region right */
+    /* #region right */
+    .right-bot-sect{
+        gap: 0.3rem;
 
-/* #endregion right */
+        i{
+            font-size: 0.6rem;
+        }
+    }
+    /* #endregion right */
 }

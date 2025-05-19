@@ -44,6 +44,13 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    & p:hover:not(.più),
+    & img:hover,
+    & h2:hover{
+        color: var(--usually-white);
+        cursor: pointer;
+    }
 }
 
 .div-in-nav{
@@ -85,6 +92,7 @@
     p{
         font-size: 0.8rem;
     }
+
 }
 
 .li-cont-2{
@@ -282,11 +290,12 @@
 }
 
 .nome-selezione{
-    margin: 1rem;
+    margin: 2rem 1rem 10px 10px;
 }
 
 .desc-selezione{
-    margin: -10px auto 1rem 1rem;
+    margin: -10px auto 1rem 10px;
+    font-size: 0.75rem;
 }
 
 .card{
@@ -294,16 +303,17 @@
     flex-direction: column;
     align-items: center;
 
+    &:hover{}
+
     img{
         max-width: 85%;
     }
 
     h2{
         font-size: 0.8rem;
-        margin: 10px 0;
         max-width: 85%;
         text-align: center;
-        margin: 10px;
+        margin: 10px 10px 4px 10px;
     }
 
     p{
