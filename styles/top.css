@@ -256,7 +256,7 @@
 
 .nav-top{
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
 
     ul{
         display: flex;
@@ -267,7 +267,6 @@
         gap: 2rem;
 
         div{
-
             border-bottom: 1px solid transparent;
 
             &:has(p:hover){
@@ -303,10 +302,37 @@
     flex-direction: column;
     align-items: center;
 
-    &:hover{}
+    .overlay{
+        position: relative;
+        
+        &:hover img{
+            filter: opacity(20%);
+            cursor: pointer;
+        }
+
+        &:hover i{
+            cursor: pointer;
+            display: block;
+        }
+    }
+
+    .fa-play{
+        position: absolute;
+        z-index: 100;
+        border: 3px solid var(--usually-white);
+        border-radius: 50%;
+        padding: 1px 3.5px;
+        color: var(--usually-white);
+        top: 50%;
+        left: 50%;
+        translate: -45% -55%;
+        cursor: pointer;
+        display: none;
+    }
 
     img{
-        max-width: 85%;
+        max-width: 80%;
+        margin-left: 15px;
     }
 
     h2{
